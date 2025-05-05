@@ -4,6 +4,7 @@
 typedef struct Hash_Table{
     int* keys;
     int* values;
+    size_t size;
 } Hash_Table;
 
 void add();
