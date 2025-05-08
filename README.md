@@ -1,9 +1,21 @@
 # Overview
-this repository represents a data structure library to be able to use linked lists,hashtables and trees in C.
+This repository contains a data structure library that allows you to use linked lists, hash tables, and trees in C.
 
 # How to use it
-for now, you can just download the files in your project directory and include the header files in your C files,
-for example this how you be able to use the pre defined functions such as add and delete in a linked list.
+For now, you can simply download the files into your project directory and include the header files in your C source files:
+
 ```C
 #include "linked_list.h"
+```
+
+# Example
+You will then be able to use the predefined functions. (The example below uses the hash table, but the same logic applies to the other data structures.)
+```C
+#include "hash_table.h"
+
+int main(){
+    int result;
+    Hash_Table *arr = create_hash_table();
+    result = search(0);
+}
 ```
