@@ -9,6 +9,6 @@ typedef struct Hash_Table{
 
 void add();
 void delete();
-void search();
+int search();
 Hash_Table *create_hash_table();
 #endif
