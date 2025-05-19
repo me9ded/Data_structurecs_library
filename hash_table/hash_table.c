@@ -1,24 +1,26 @@
 #include <stdlib.h>
 #include "hash_table.h"
 
+// for all functions 0 indicates a failure while 1 indicates a success.
+
 Hash_Table *arr;
 int i;
 
-Hash_Table *create_hash_table()
+int *create_hash_table(Hash_Table *arr)
 {
     arr = (Hash_Table *)malloc(sizeof(Hash_Table));
     if (!arr)
-        return;
+        return 0;
     arr->keys = (int *)malloc(sizeof(int));
     if (!arr->keys)
-        return;
+        return 0;
     arr->values = (int *)malloc(sizeof(int));
-    if (arr->values)
-        return;
-    return arr;
+    if (!arr->values)
+        return 0;
+    return 1;
 }
 
-void add(int number)
+int add(Hash_Table *arr, int number)
 {
 
     for (i = 0; i < arr->size; i++)
@@ -33,9 +35,11 @@ void add(int number)
             arr->values[i]++;
         }
     }
+
+    return 1;
 }
 
-void delete(int number)
+int delete(Hash_Table *arr, int number)
 {
 
     for (i = 0; arr->size; i++)
@@ -46,9 +50,11 @@ void delete(int number)
             free(arr->values[i]);
         }
     }
+
+    return 1;
 }
 
-int search(int number)
+int search(Hash_Table *arr, int number)
 {
     int result = 0;
     for (i = 0; i < arr->size; i++)

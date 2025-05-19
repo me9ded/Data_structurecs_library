@@ -7,8 +7,8 @@ typedef struct Hash_Table{
     size_t size;
 } Hash_Table;
 
-void add();
-void delete();
-int search();
-Hash_Table *create_hash_table();
+int add(Hash_Table*arr, int number);
+int delete(Hash_Table*arr,int number);
+int search(Hash_Table*arr,int number);
+int *create_hash_table(Hash_Table *arr);
 #endif
