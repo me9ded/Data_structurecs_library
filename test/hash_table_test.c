@@ -38,8 +38,8 @@ int main(){
     CU_initialize_registry();
     CU_pSuite test_suite = CU_add_suite("testing of the hash table functions",NULL,NULL);
     CU_add_test(test_suite, "testing of the adding function",test_add);
-    CU_add_test(test_suite, "testing of the adding function",test_search);
-    CU_add_test(test_suite, "testing of the adding function",test_delete);
+    CU_add_test(test_suite, "testing of the search function",test_search);
+    CU_add_test(test_suite, "testing of the delete function",test_delete);
     CU_run_all_tests();
     CU_cleanup_registry();
 
