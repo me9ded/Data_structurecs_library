@@ -10,5 +10,5 @@ typedef struct Hash_Table{
 int add(Hash_Table*arr, int number);
 int delete(Hash_Table*arr,int number);
 int search(Hash_Table*arr,int number);
-int create_hash_table(Hash_Table *arr);
+Hash_Table* create_hash_table();
 #endif

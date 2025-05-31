@@ -29,5 +29,6 @@
         ".env": "properties",
         "*.c": "c",
         "basic.h": "c"
-    }
+    },
+    "makefile.configureOnOpen": false
 }
