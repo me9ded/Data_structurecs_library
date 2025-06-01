@@ -88,3 +88,7 @@ int delete_at_middle(Node **head){
 
     return 1;
 }
+
+Node *create_node(int data){
+
+}
