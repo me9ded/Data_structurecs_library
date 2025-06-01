@@ -42,6 +42,5 @@ int main(){
     CU_add_test(test_suite, "testing of the delete function",test_delete);
     CU_run_all_tests();
     CU_cleanup_registry();
-
     return 0;
 }
